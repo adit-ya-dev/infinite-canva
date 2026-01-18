@@ -6,6 +6,8 @@ export namespace Converter {
   export const _bytes2 = new Uint8Array(2);
   export const _short = new Int16Array(Converter._bytes2.buffer);
 
+
+  
   export function floatToInt(value: number) {
     _float[0] = value;
     return _int[0];
