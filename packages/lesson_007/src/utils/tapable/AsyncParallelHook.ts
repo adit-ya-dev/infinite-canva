@@ -1,6 +1,8 @@
 export class AsyncParallelHook<T> {
   #callbacks: ((...args: T[]) => Promise<void>)[] = [];
 
+
+  
   getCallbacksNum() {
     return this.#callbacks.length;
   }
