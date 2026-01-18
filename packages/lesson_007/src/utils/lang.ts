@@ -1,5 +1,7 @@
 // @see https://youmightnotneed.com/lodash
 
+
+
 export const isNumber = (a): a is number => typeof a === 'number';
 export const isObject = (a): a is object => a instanceof Object;
 export const isBoolean = (arg): arg is boolean => arg === !!arg;
