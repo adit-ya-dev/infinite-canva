@@ -5,6 +5,7 @@ export class SyncHook<T> {
   tap(fn: (...args: AsArray<T>) => void) {
     this.#callbacks.push(fn);
   }
+  
 
   call(...argsArr: AsArray<T>): void {
     this.#callbacks.forEach(function (callback) {
