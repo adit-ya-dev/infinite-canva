@@ -1,4 +1,5 @@
 import type { AsArray } from './interfaces';
+
 export class SyncHook<T> {
   #callbacks: ((...args: AsArray<T>) => void)[] = [];
 
